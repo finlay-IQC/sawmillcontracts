@@ -13,9 +13,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://api.leadconnectorhq.com">
-  <link rel="preload" as="image" href="images/hero.jpg">
+  <link rel="preload" as="image" href="images/hero-960.jpg" imagesrcset="images/hero-960.jpg 960w, images/hero-1920.jpg 1920w" imagesizes="100vw">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,12 +26,11 @@
   <!-- ===================================================== HERO -->
   <header class="hero">
     <div class="hero__media ph" aria-hidden="true">
-      <span class="ph__label">Hero image — images/hero.jpg (finished extension, ideally SHIA award-winning project)</span>
-      <img src="images/hero.jpg" alt="" fetchpriority="high" onerror="this.remove()">
+      <img src="images/hero-1920.jpg" srcset="images/hero-960.jpg 960w, images/hero-1920.jpg 1920w" sizes="100vw" alt="" fetchpriority="high">
     </div>
 
     <div class="hero__brand">
-      <span>Sawmill Contracts</span>
+      <img src="images/sawmill-logo-dark.png" width="200" height="200" alt="Sawmill Contracts">
       <a href="tel:07713898723">07713 898723</a>
     </div>
 
@@ -52,29 +51,19 @@
 
   <main>
     <!-- ===================================================== SOCIAL PROOF STRIP -->
-    <section class="awardbar" aria-label="Awards and track record">
-      <!-- OFFICIAL AWARD / MEMBERSHIP LOGOS GO HERE IF SUPPLIED BY CLIENT -->
-      <div class="awardbar__grid">
-        <div class="awardbar__item awardbar__item--lead">
-          <strong>SHIA 2026 Winner</strong>
-          <span>Scotland's Best Home Extension Company</span>
-        </div>
-        <div class="awardbar__item">
-          <strong>SHIA 2024 Winner</strong>
-          <span>Best Extension/Conversion Company</span>
-        </div>
-        <div class="awardbar__item">
-          <strong>30 years</strong>
-          <span>Building in Edinburgh</span>
-        </div>
-        <div class="awardbar__item">
-          <strong>100+</strong>
-          <span>Projects completed</span>
-        </div>
-        <div class="awardbar__item">
-          <strong>£400k</strong>
-          <span>Typical project value</span>
-        </div>
+    <section class="proofbar" aria-label="Awards and track record">
+      <!-- Official logo files supplied by client (Drive). Association of Master Tradesmen logo not supplied — text only below. -->
+      <div class="proofbar__logos">
+        <img src="images/logo-shia-2026.png" width="228" height="240" alt="Scottish Home Improvement Awards 2026 Winner">
+        <img src="images/logo-shia-2024.png" width="228" height="240" alt="Scottish Home Improvement Awards 2024 Winner">
+        <img src="images/logo-fmb.png" class="wide" width="240" height="120" alt="Federation of Master Builders member">
+        <img src="images/logo-trusted-trader.png" width="192" height="240" alt="Edinburgh Trusted Trader">
+      </div>
+      <div class="proofbar__stats">
+        <div><strong>SHIA 2026 Winner</strong><span>Scotland's Best Home Extension Company</span></div>
+        <div><strong>30 years</strong><span>Building in Edinburgh</span></div>
+        <div><strong>100+</strong><span>Projects completed</span></div>
+        <div><strong>£400k</strong><span>Typical project value</span></div>
       </div>
     </section>
 
@@ -163,8 +152,7 @@
     <!-- ===================================================== MECHANISM -->
     <section class="mech" aria-labelledby="mech-title">
       <div class="mech__image ph">
-        <span class="ph__label">Large project photo — images/mechanism.jpg (finished interior or rear extension)</span>
-        <img src="images/mechanism.jpg" alt="Finished Sawmill Contracts extension in Edinburgh" loading="lazy" onerror="this.remove()">
+        <img src="images/mechanism-1920.jpg" srcset="images/mechanism-960.jpg 960w, images/mechanism-1920.jpg 1920w" sizes="100vw" alt="Bright garden room extension with full-height glazing, built by Sawmill Contracts" loading="lazy" decoding="async">
       </div>
       <div class="mech__panel">
         <span class="kicker">Why it's different</span>
@@ -191,7 +179,7 @@
     </section>
 
     <!-- ===================================================== HOW IT WORKS -->
-    <section class="section section--paper" aria-labelledby="how-title">
+    <section class="section section--orange" aria-labelledby="how-title">
       <div class="wrap">
         <div class="section-head">
           <span class="kicker">How it works</span>
@@ -229,8 +217,7 @@
     <!-- ===================================================== WHAT YOU GET -->
     <section class="split" aria-labelledby="get-title">
       <div class="split__image ph">
-        <span class="ph__label">Project photo — images/call.jpg (kitchen / open-plan living space)</span>
-        <img src="images/call.jpg" alt="Open-plan kitchen in a renovated Edinburgh home" loading="lazy" onerror="this.remove()">
+        <img src="images/call-1920.jpg" srcset="images/call-960.jpg 960w, images/call-1920.jpg 1920w" sizes="100vw" alt="Kitchen and dining room opening into a new extension" fetchpriority="high">
       </div>
       <div class="split__copy">
         <span class="kicker">Your free call</span>
@@ -256,47 +243,49 @@
         </div>
       </div>
 
-      <!-- Replace each image + caption with a real project. Before/after pairs work best.
-           Caption format: [Project type] — [Area], Edinburgh — [Outcome]. Only mark a project as
-           award-winning if the client confirms that exact project won. -->
+      <!-- Real project photos supplied by client. Add the area (e.g. "Corstorphine") to each caption once
+           confirmed, and only label a project "award-winning" if the client confirms that exact project won.
+           No before/after photos were supplied — swap a pair in here if they become available. -->
       <div class="gallery">
         <figure class="ph">
-          <span class="ph__label">Project 1 — BEFORE — images/project-1-before.jpg</span>
-          <img src="images/project-1-before.jpg" alt="Project 1 before work started" loading="lazy" onerror="this.remove()">
-          <figcaption><b>Before</b> — [PROJECT TYPE], [AREA], Edinburgh</figcaption>
+          <img src="images/project-1-1920.jpg" srcset="images/project-1-960.jpg 960w, images/project-1-1920.jpg 1920w" sizes="(min-width: 800px) 50vw, 100vw" alt="Single-storey rear extension, opening the house onto the garden" loading="lazy" decoding="async">
+          <figcaption><b>Single-storey rear extension</b> — the house now opens onto the garden</figcaption>
         </figure>
         <figure class="ph">
-          <span class="ph__label">Project 1 — AFTER — images/project-1-after.jpg</span>
-          <img src="images/project-1-after.jpg" alt="Project 1 after completion" loading="lazy" onerror="this.remove()">
-          <figcaption><b>After</b> — [OUTCOME, e.g. new open-plan kitchen and family room]</figcaption>
+          <img src="images/project-2-1920.jpg" srcset="images/project-2-960.jpg 960w, images/project-2-1920.jpg 1920w" sizes="(min-width: 800px) 50vw, 100vw" alt="Contemporary rear extension with full-height glazing" loading="lazy" decoding="async">
+          <figcaption><b>Contemporary extension</b> — full-height glazing and a bright new living space</figcaption>
         </figure>
         <figure class="ph">
-          <span class="ph__label">Project 2 — images/project-2.jpg</span>
-          <img src="images/project-2.jpg" alt="Project 2 completed extension" loading="lazy" onerror="this.remove()">
-          <figcaption>[PROJECT TYPE] — [AREA], Edinburgh — [OUTCOME]</figcaption>
+          <img src="images/project-3-1920.jpg" srcset="images/project-3-960.jpg 960w, images/project-3-1920.jpg 1920w" sizes="(min-width: 800px) 50vw, 100vw" alt="Extension and new patio, with living space that opens onto the garden" loading="lazy" decoding="async">
+          <figcaption><b>Extension and patio</b> — living space that steps straight outside</figcaption>
         </figure>
         <figure class="ph">
-          <span class="ph__label">Project 3 — images/project-3.jpg</span>
-          <img src="images/project-3.jpg" alt="Project 3 full home renovation" loading="lazy" onerror="this.remove()">
-          <figcaption>[PROJECT TYPE] — [AREA], Edinburgh — [OUTCOME]</figcaption>
+          <img src="images/project-4-1920.jpg" srcset="images/project-4-960.jpg 960w, images/project-4-1920.jpg 1920w" sizes="(min-width: 800px) 50vw, 100vw" alt="Kitchen-diner extension with wide sliding doors" loading="lazy" decoding="async">
+          <figcaption><b>Kitchen-diner extension</b> — room for the whole family, with wide sliding doors</figcaption>
         </figure>
       </div>
 
-      <!-- TESTIMONIAL — use a REAL homeowner quote only. Delete this block if none is supplied. -->
+      <!-- TESTIMONIAL BAND — hidden until a REAL homeowner quote is supplied. To use: paste the quote, then remove these comment markers.
+      
       <div class="quote-band">
         <div class="ph">
-          <span class="ph__label">Testimonial background — images/testimonial.jpg</span>
-          <img src="images/testimonial.jpg" alt="" loading="lazy" onerror="this.remove()">
+          <img src="images/project-4-1920.jpg" srcset="images/project-4-960.jpg 960w, images/project-4-1920.jpg 1920w" sizes="100vw" alt="" loading="lazy" decoding="async">
         </div>
         <blockquote>
           <p>[REAL HOMEOWNER QUOTE — 1 to 2 short sentences]</p>
           <cite>[FIRST NAME], [AREA], Edinburgh — [PROJECT TYPE] · [STAR RATING] from [REVIEW COUNT] Google reviews</cite>
         </blockquote>
       </div>
+      -->
 
       <div class="badges">
         <div class="wrap">
-          <!-- OFFICIAL AWARD / MEMBERSHIP LOGOS GO HERE IF SUPPLIED BY CLIENT -->
+          <div class="badges__logos">
+            <img src="images/logo-shia-2026.png" width="228" height="240" alt="Scottish Home Improvement Awards 2026 Winner" loading="lazy">
+            <img src="images/logo-shia-2024.png" width="228" height="240" alt="Scottish Home Improvement Awards 2024 Winner" loading="lazy">
+            <img src="images/logo-fmb.png" class="wide" width="240" height="120" alt="Federation of Master Builders member" loading="lazy">
+            <img src="images/logo-trusted-trader.png" width="192" height="240" alt="Edinburgh Trusted Trader" loading="lazy">
+          </div>
           <ul class="badges__grid" aria-label="Awards and memberships">
             <li><span class="yr">SHIA 2026</span><span class="what">Winner<small>Scotland's Best Home Extension Company</small></span></li>
             <li><span class="yr">SHIA 2026</span><span class="what">Highly Recommended<small>Scotland's Home and Renovation of the Year</small></span></li>
@@ -351,8 +340,7 @@
     <!-- ===================================================== FINAL CTA -->
     <section class="final" aria-labelledby="final-title">
       <div class="ph">
-        <span class="ph__label">Final CTA image — images/final.jpg (exterior of finished home, ideally at dusk)</span>
-        <img src="images/final.jpg" alt="" loading="lazy" onerror="this.remove()">
+        <img src="images/final-1920.jpg" srcset="images/final-960.jpg 960w, images/final-1920.jpg 1920w" sizes="100vw" alt="" loading="lazy" decoding="async">
       </div>
       <div class="final__inner">
         <h2 id="final-title">Stay where you are. Make it fit.</h2>

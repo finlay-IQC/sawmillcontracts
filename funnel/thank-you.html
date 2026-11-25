@@ -17,7 +17,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,8 +25,7 @@
 
   <header class="ty-hero">
     <div class="ph" aria-hidden="true">
-      <span class="ph__label">Thank-you image — images/thank-you.jpg (finished project)</span>
-      <img src="images/thank-you.jpg" alt="" onerror="this.remove()">
+      <img src="images/project-3-1920.jpg" srcset="images/project-3-960.jpg 960w, images/project-3-1920.jpg 1920w" sizes="100vw" alt="" fetchpriority="high">
     </div>
     <div class="ty-hero__inner">
       <p class="check">Details received</p>
@@ -61,7 +60,11 @@
 
     <section class="award-strip" aria-label="Awards">
       <div class="wrap">
-        <!-- OFFICIAL AWARD / MEMBERSHIP LOGOS GO HERE IF SUPPLIED BY CLIENT -->
+        <div class="logos">
+          <img src="images/logo-shia-2026.png" width="228" height="240" alt="Scottish Home Improvement Awards 2026 Winner" loading="lazy">
+          <img src="images/logo-shia-2024.png" width="228" height="240" alt="Scottish Home Improvement Awards 2024 Winner" loading="lazy">
+          <img src="images/logo-fmb.png" class="wide" width="240" height="120" alt="Federation of Master Builders member" loading="lazy">
+        </div>
         <ul>
           <li><b>SHIA 2026 Winner</b> Scotland's Best Home Extension Company</li>
           <li><b>SHIA 2024 Winner</b> Best Extension/Conversion Company</li>
@@ -79,24 +82,20 @@
       </div>
       <div class="gallery">
         <figure class="ph">
-          <span class="ph__label">Project — images/project-1-after.jpg</span>
-          <img src="images/project-1-after.jpg" alt="Completed Sawmill Contracts project" loading="lazy" onerror="this.remove()">
-          <figcaption>[PROJECT TYPE] — [AREA], Edinburgh — [OUTCOME]</figcaption>
+          <img src="images/project-1-1920.jpg" srcset="images/project-1-960.jpg 960w, images/project-1-1920.jpg 1920w" sizes="(min-width: 800px) 50vw, 100vw" alt="Single-storey rear extension" loading="lazy" decoding="async">
+          <figcaption><b>Single-storey rear extension</b></figcaption>
         </figure>
         <figure class="ph">
-          <span class="ph__label">Project — images/project-2.jpg</span>
-          <img src="images/project-2.jpg" alt="Completed Sawmill Contracts extension" loading="lazy" onerror="this.remove()">
-          <figcaption>[PROJECT TYPE] — [AREA], Edinburgh — [OUTCOME]</figcaption>
+          <img src="images/project-2-1920.jpg" srcset="images/project-2-960.jpg 960w, images/project-2-1920.jpg 1920w" sizes="(min-width: 800px) 50vw, 100vw" alt="Contemporary rear extension with full-height glazing" loading="lazy" decoding="async">
+          <figcaption><b>Contemporary extension</b></figcaption>
         </figure>
         <figure class="ph">
-          <span class="ph__label">Project — images/project-3.jpg</span>
-          <img src="images/project-3.jpg" alt="Completed Sawmill Contracts renovation" loading="lazy" onerror="this.remove()">
-          <figcaption>[PROJECT TYPE] — [AREA], Edinburgh — [OUTCOME]</figcaption>
+          <img src="images/mechanism-1920.jpg" srcset="images/mechanism-960.jpg 960w, images/mechanism-1920.jpg 1920w" sizes="(min-width: 800px) 50vw, 100vw" alt="Garden room extension with full-height glazing" loading="lazy" decoding="async">
+          <figcaption><b>Garden room extension</b></figcaption>
         </figure>
         <figure class="ph">
-          <span class="ph__label">Project — images/project-4.jpg</span>
-          <img src="images/project-4.jpg" alt="Completed Sawmill Contracts home" loading="lazy" onerror="this.remove()">
-          <figcaption>[PROJECT TYPE] — [AREA], Edinburgh — [OUTCOME]</figcaption>
+          <img src="images/project-4-1920.jpg" srcset="images/project-4-960.jpg 960w, images/project-4-1920.jpg 1920w" sizes="(min-width: 800px) 50vw, 100vw" alt="Kitchen-diner extension with sliding doors" loading="lazy" decoding="async">
+          <figcaption><b>Kitchen-diner extension</b></figcaption>
         </figure>
       </div>
     </section>
