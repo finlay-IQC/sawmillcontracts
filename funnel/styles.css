@@ -207,8 +207,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
   gap: 20px 32px; padding: 32px var(--gutter) 28px;
 }
-.proofbar__logos img { height: 84px; width: auto; }
-.proofbar__logos .wide { height: 52px; }
+.proofbar__logos img { height: 72px; width: auto; }
+.proofbar__logos .wide { height: 48px; }
 @media (min-width: 900px) {
   .proofbar__logos { gap: 56px; padding: 40px var(--gutter) 36px; }
   .proofbar__logos img { height: 112px; }
@@ -538,3 +538,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .award-strip .logos img { height: 72px; width: auto; }
 .award-strip .logos .wide { height: 44px; }
 .legal-top img { width: 56px; height: 56px; }
+
+/* Logos with dark artwork need a light backing on dark sections */
+.badges__logos .on-light, .award-strip .on-light { background: var(--white); padding: 8px 12px; border-radius: 3px; box-sizing: content-box; }
